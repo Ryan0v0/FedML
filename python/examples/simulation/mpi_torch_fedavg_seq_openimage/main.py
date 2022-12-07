@@ -15,13 +15,10 @@ from fedml.arguments import Arguments
 from fedml import FedMLRunner
 
 # need to have openimage dataloader
-# from fedml.data.reddit.data_loader import load_partition_data_reddit
+from data_loader import load_partition_data_openimage
 
 from openimage_trainer import OpenImageTrainer
 from openimage_aggregator import OpenImageAggregator
-
-def load_partition_data_openimage():
-
 
 def add_args():
     parser = argparse.ArgumentParser(description="FedML")
